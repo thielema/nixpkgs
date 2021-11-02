@@ -13184,6 +13184,8 @@ with pkgs;
 
   dhall-nix = haskell.lib.justStaticExecutables haskellPackages.dhall-nix;
 
+  dhall-nixpkgs = haskell.lib.justStaticExecutables haskellPackages.dhall-nixpkgs;
+
   dhall-text = haskell.lib.justStaticExecutables haskellPackages.dhall-text;
 
   dhallPackages = recurseIntoAttrs (callPackage ./dhall-packages.nix { });
